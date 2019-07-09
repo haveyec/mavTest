@@ -12,9 +12,12 @@
 		774D580222D363B200384A98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774D580022D363B200384A98 /* Main.storyboard */; };
 		774D580422D363B600384A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774D580322D363B600384A98 /* Assets.xcassets */; };
 		774D580722D363B600384A98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774D580522D363B600384A98 /* LaunchScreen.storyboard */; };
+		774D580F22D3673D00384A98 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D580E22D3673D00384A98 /* WebService.swift */; };
+		B98904C2B97966996A480979 /* Pods_TestForMav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7058DFC88E90A96A01AAF4 /* Pods_TestForMav.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A7058DFC88E90A96A01AAF4 /* Pods_TestForMav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestForMav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774D57F922D363B200384A98 /* TestForMav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForMav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774D57FC22D363B200384A98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774D57FE22D363B200384A98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		774D580322D363B600384A98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774D580622D363B600384A98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		774D580822D363B600384A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774D580E22D3673D00384A98 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D4821638D3472A372EEBD205 /* Pods-TestForMav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForMav.release.xcconfig"; path = "Target Support Files/Pods-TestForMav/Pods-TestForMav.release.xcconfig"; sourceTree = "<group>"; };
+		D5A07446B4A0D2BEEAE271F0 /* Pods-TestForMav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestForMav.debug.xcconfig"; path = "Target Support Files/Pods-TestForMav/Pods-TestForMav.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98904C2B97966996A480979 /* Pods_TestForMav.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5706F694B310C9E69877F83E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5A07446B4A0D2BEEAE271F0 /* Pods-TestForMav.debug.xcconfig */,
+				D4821638D3472A372EEBD205 /* Pods-TestForMav.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		774D57F022D363B200384A98 = {
 			isa = PBXGroup;
 			children = (
 				774D57FB22D363B200384A98 /* TestForMav */,
 				774D57FA22D363B200384A98 /* Products */,
+				5706F694B310C9E69877F83E /* Pods */,
+				E50FD26A640F1E6DBB9F8F16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,7 @@
 		774D57FB22D363B200384A98 /* TestForMav */ = {
 			isa = PBXGroup;
 			children = (
+				774D580E22D3673D00384A98 /* WebService.swift */,
 				774D57FC22D363B200384A98 /* AppDelegate.swift */,
 				774D57FE22D363B200384A98 /* ViewController.swift */,
 				774D580022D363B200384A98 /* Main.storyboard */,
@@ -64,6 +83,14 @@
 			path = TestForMav;
 			sourceTree = "<group>";
 		};
+		E50FD26A640F1E6DBB9F8F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A7058DFC88E90A96A01AAF4 /* Pods_TestForMav.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 774D580B22D363B600384A98 /* Build configuration list for PBXNativeTarget "TestForMav" */;
 			buildPhases = (
+				8CE2E21AF9E68CDBF316BB5A /* [CP] Check Pods Manifest.lock */,
 				774D57F522D363B200384A98 /* Sources */,
 				774D57F622D363B200384A98 /* Frameworks */,
 				774D57F722D363B200384A98 /* Resources */,
+				079147AAFD4D83802BC29BDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		079147AAFD4D83802BC29BDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestForMav/Pods-TestForMav-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestForMav/Pods-TestForMav-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE2E21AF9E68CDBF316BB5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestForMav-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		774D57F522D363B200384A98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774D580F22D3673D00384A98 /* WebService.swift in Sources */,
 				774D57FF22D363B200384A98 /* ViewController.swift in Sources */,
 				774D57FD22D363B200384A98 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +357,7 @@
 		};
 		774D580C22D363B600384A98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A07446B4A0D2BEEAE271F0 /* Pods-TestForMav.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		774D580D22D363B600384A98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4821638D3472A372EEBD205 /* Pods-TestForMav.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

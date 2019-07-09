@@ -1,0 +1,6 @@
+framework module Pods_TestForMav {
+  umbrella header "Pods-TestForMav-umbrella.h"
+
+  export *
+  module * { export * }
+}
